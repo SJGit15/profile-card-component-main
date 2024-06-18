@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: top left, bottom right;
+    background-color: hsl(185, 75%, 39%);
+    
+    font-family: 'Kumbh Sans';
+    font-size: 18px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    
+    width: 350px;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.pattern {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.victor {
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: 230px;
+}
+
+.bio {
+    width: 150px;
+    text-align: center;
+}
+
+.bio p:first-of-type {
+    float: left;
+    color: hsl(229, 23%, 23%);
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.bio p:nth-of-type(2), .bio p:nth-of-type(3), .stats p:nth-of-type(2) {
+    color: hsl(227, 10%, 46%);
+}
+
+.bio p:nth-of-type(3) {
+    padding-top: 10px;
+}
+
+hr {
+    color: hsl(0, 0%, 59%);
+    width: 350px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.stats p:first-of-type {
+    color: hsl(229, 23%, 23%);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
